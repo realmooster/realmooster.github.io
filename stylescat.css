@@ -1,0 +1,102 @@
+body{
+    width:100%;
+    height:100vh;
+    margin:0;
+    background-color:#4d4d68;
+    color:white;
+    font-family:Tahoma;
+    font-size:16px;
+}
+
+img[alt="garfield"] {
+    margin:20px;
+    display:block;
+}
+
+/* FORM */
+label{
+    display:block; /* Makes the options separated on individual lines*/
+    margin: 0.5rem 0; /* Creates a bigger space for the options */
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom:2em;
+  }
+
+  
+.form-name{
+    margin:auto;
+    display:block;
+    text-align:center;
+}
+
+fieldset{
+    border:0;
+    border-bottom:3px solid #3b3b4f;
+    padding-left:0;
+    padding-right:0;
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+
+fieldset:last-of-type{
+    border-bottom:none;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height:2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;        /*Makes those checkboxes for the forms to go on the left.*/
+    vertical-align: middle;
+}
+
+input,textarea{
+    background-color:#0a0a23;
+    border:1px solid;
+    border-color:#0a0a23;
+}
+
+hr {
+    margin:0;
+}
+
+hr + section {
+    background-color: #1b1b32; /* Changes the bottom of the page's color after the HR divider */
+    padding: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;                      /*THE SUBMIT BUTTON*/
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+a{
+    color:#dfdfe2;
+}
+
+footer{
+    margin-top:auto;
+    text-align:center;
+    padding-bottom:2px
+}
