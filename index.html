@@ -1,43 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Certifications and Projects</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    #navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #1f1f1f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 10px;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: background-color 0.3s;
+    }
+    #navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.2s;
+    }
+    #navbar a:hover {
+      color: #00ccff;
+      transform: scale(1.1);
+    }
+    #welcome-section {
+      height: 100vh;
+      background: linear-gradient(135deg, #6e8efb, #a777e3);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+    #welcome-section h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+    #welcome-section p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+    #projects {
+      padding: 100px 20px;
+      background-color: #1e1e1e;
+      text-align: center;
+    }
+    #projects h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .project-tile {
+      margin: 20px auto;
+      max-width: 700px;
+      background: #2c2c2c;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+    .project-tile a {
+      text-decoration: none;
+      color: #00ccff;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    #social-media {
+      background-color: #141414;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    #social-media h2 {
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+    #social-media a {
+      color: #00ccff;
+      margin: 10px 15px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      padding: 12px 20px;
+      border: 2px solid #00ccff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    #social-media a:hover {
+      background-color: #00ccff;
+      color: black;
+    }
+    #profile {
+      padding: 80px 20px;
+      background-color: #222;
+      text-align: center;
+    }
+    #profile h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #profile p {
+      max-width: 750px;
+      margin: 0 auto;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    @media (max-width: 600px) {
+      #navbar {
+        flex-direction: column;
+        gap: 10px;
+      }
+      #welcome-section h1 {
+        font-size: 2.2rem;
+      }
+      #welcome-section p {
+        font-size: 1rem;
+      }
+      .project-tile {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>My Coding Journey</h1>
-    </header>
+  <nav id="navbar">
+    <a href="#welcome-section">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#social-media">Contact</a>
+    <a href="#profile">Profile</a>
+  </nav>
 
-    <div class="container">
-        <!-- Certifications Section -->
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Python ITS Certification</li>
-                <li>HTML and CSS Fundamentals</li>
-                <li>Artificial Intelligence Basics</li>
-                <li>Data Analytics</li>
-            </ul>
-        </div>
+  <section id="welcome-section">
+    <h1>Hi, I'm Alex, a Future Developer!</h1>
+    <p>Crafting creative code, one project at a time.</p>
+  </section>
 
-        <!-- Projects Section -->
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="#">Personal Portfolio Website</a></li>
-                <li><a href="cafe-menu.html">Cafe Menu</a></li>
-                <li><a href="cat-photo-app.html">Cat Photo App</a></li>
-                <li><a href="NutritionLabel.html">Nutrition Label</a></li>
-                <li><a href="website.html">Portfolio Website</a></li>
-            </ul>
-        </div>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://example.com/project1" target="_blank">Flappy Neon Cat - A Fun Flappy Bird Reskin</a>
     </div>
+    <div class="project-tile">
+      <a href="cafe-menu.html" target="_blank">Cafe Menu</a>
+    </div>
+    <div class="project-tile">
+      <a href="cat-photo-app.html" target="_blank">Cat Photo App</a>
+    </div>
+    <div class="project-tile">
+      <a href="NutritionLabel.html" target="_blank">Nutrition Label</a>
+    </div>
+    <div class="project-tile">
+      <a href="website.html" target="_blank">Personal Portfolio Website</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Alex's Portfolio</p>
-    </footer>
+  <section id="social-media">
+    <h2>Connect with Me</h2>
+    <a href="https://github.com/realmooster" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/alexander-dinh-6ab048351/" target="_blank">LinkedIn</a>
+    <a href="https://www.codewars.com/users/realmooster" target="_blank">CodeWars</a>
+  </section>
+
+  <section id="profile">
+    <h2>About Me</h2>
+    <p>I began coding in high school with a passion for game development and web design. My journey includes experimenting with interactive games like "Flappy Neon Cat" and building responsive websites. I love solving problems, learning new tech, and bringing ideas to life through code.</p>
+  </section>
 </body>
 </html>
